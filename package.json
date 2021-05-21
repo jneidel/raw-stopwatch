@@ -1,21 +1,22 @@
 {
-  "name": "stopwatch-cli",
+  "name": "raw-stopwatch",
   "version": "1.0.0",
-  "description": "A simple stopwatch app that runs on the shell.",
+  "description": "A bare bones stopwatch for the terminal.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "lint-focus": "standard-focus",
-    "test": "standard"
+    "start": "node src"
   },
   "bin": {
-    "stopwatch-cli": "./src/index.js"
+    "raw-stopwatch": "./src/index.js"
   },
   "keywords": [
     "timer"
   ],
-  "author": "Alberto Miranda",
-  "repository": "codealchemist/stopwatch-cli",
+  "contributors": [
+    "Alberto Miranda",
+    "Jonathan Neidel"
+  ],
+  "repository": "jneidel/stopwatch-cli",
   "license": "MIT",
   "devDependencies": {
     "standard-focus": "^1.1.2"

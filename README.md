@@ -1,21 +1,21 @@
-# stopwatch-cli
-A simple stopwatch app that runs on the shell.
+# raw-stopwatch
 
-[![Build Status](https://travis-ci.org/codealchemist/stopwatch-cli.svg?branch=master)](https://travis-ci.org/codealchemist/stopwatch-cli)
+No-frills fork of [codealchemist/stopwatch-cli](https://github.com/codealchemist/stopwatch-cli).
 
-![screenshot](https://cldup.com/Svbrr16C7v.gif)
+![screenshot](screenshot.png)
 
 ## Install
 
-`npm install -g stopwatch-cli`
+`npm install -g raw-stopwatch`
 
 ## Usage
 
-Just run `stopwatch-cli` on your shell to start the timer.
+```
+$ raw-stopwatch
+```
 
 Keyboard interface:
 
 - `ENTER`: Creates a lap.
 - `SPACE`: Pauses the timer.
 - `q` or `ctrl+c`: Quit.
-
