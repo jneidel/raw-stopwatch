@@ -1,11 +1,10 @@
 {
   "name": "raw-stopwatch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A bare bones stopwatch for the terminal.",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src",
-    "test": "true"
+    "start": "node src"
   },
   "bin": {
     "raw-stopwatch": "./src/index.js"
