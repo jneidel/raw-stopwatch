@@ -6,16 +6,18 @@ No-frills fork of [codealchemist/stopwatch-cli](https://github.com/codealchemist
 
 ## Install
 
-`npm install -g raw-stopwatch`
+```sh
+npm install -g raw-stopwatch
+```
 
 ## Usage
 
-```
-$ raw-stopwatch
+```sh
+raw-stopwatch
 ```
 
-Keyboard interface:
+**Keyboard interface:**
 
-- `ENTER`: Creates a lap.
 - `SPACE`: Pauses the timer.
+- `ENTER`: Creates a lap.
 - `q` or `ctrl+c`: Quit.

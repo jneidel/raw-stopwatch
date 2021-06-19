@@ -10,7 +10,9 @@
     "raw-stopwatch": "./src/index.js"
   },
   "keywords": [
-    "timer"
+    "stopwatch",
+    "timer",
+    "cli"
   ],
   "contributors": [
     "Alberto Miranda",
