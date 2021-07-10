@@ -6,9 +6,9 @@ No-frills fork of [codealchemist/stopwatch-cli](https://github.com/codealchemist
 
 ![screenshot](screenshot.png)
 
-Compared to the original this version:
+Compared to the original, this version:
 
-- Removes emoji and big `stopwatch-cli`
+- Removes emoji and big `stopwatch-cli` text
 - Adds a time relative to the last lap
 
 ## Install
