@@ -10,6 +10,7 @@ class Stopwatch {
     this.timeEnd
     this.currentTime
     this.laps = []
+    this.lastLapDuration = null;
     this.running = false
     this.callback
   }
@@ -60,7 +61,15 @@ class Stopwatch {
   lap () {
     const elapsedTime = this.getElapsedTime()
     const time = format(elapsedTime)
-    this.laps.push(time)
+
+    if ( this.lastLapDuration ) {
+      const rawLapTime = elapsedTime - this.lastLapDuration
+      this.lastLapDuration += rawLapTime;
+      var lapTime = format( rawLapTime )
+    } else
+      this.lastLapDuration = elapsedTime;
+
+    this.laps.push( { time, lapTime: lapTime ? lapTime : null } )
   }
 
   getElapsedTime () {
@@ -77,9 +86,9 @@ class Stopwatch {
   }
 
   showLaps () {
-    this.laps.forEach((lapTime, i) => {
+    this.laps.forEach((lap, i) => {
       const lapNumber = i + 1
-      const lapInfo = ` - LAP ${lapNumber}: ${lapTime}`
+      const lapInfo = ` - LAP ${lapNumber}: ${lap.lapTime ? lap.lapTime : lap.time} (total: ${lap.time})`
       clivas.line(lapInfo)
     })
   }
