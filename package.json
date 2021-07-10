@@ -1,6 +1,6 @@
 {
   "name": "raw-stopwatch",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A bare bones stopwatch for the terminal.",
   "main": "src/index.js",
   "scripts": {
