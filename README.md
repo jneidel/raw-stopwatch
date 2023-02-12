@@ -13,6 +13,8 @@ Compared to the original, this version:
 
 ## Install
 
+[![](https://img.shields.io/npm/v/raw-stopwatch.svg?style=flat-square)](https://www.npmjs.com/package/raw-stopwatch)
+
 ```sh
 npm install -g raw-stopwatch
 ```
